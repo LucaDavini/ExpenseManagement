@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Schema XML per DatiConfigurazione -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="DatiConfigurazione">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ipDB" type="xs:string"/>
+                <xs:element name="portaDB" type="xs:integer"/>
+                <xs:element name="userDB" type="xs:string"/>
+                <xs:element name="passwordDB" type="xs:string"/>
+                <xs:element name="ipClient" type="xs:string"/>
+                <xs:element name="ipServerLog" type="xs:string"/>
+                <xs:element name="portaServerLog" type="xs:integer"/>
+                <xs:element name="listaCategorie">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="string" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
