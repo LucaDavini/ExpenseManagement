@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Schema XML per EventoGUI -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="EventoGUI">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="nomeApp" type="xs:string" use="required"/>
+                    <xs:attribute name="ipClient" type="xs:string" use="required"/>
+                    <xs:attribute name="timestamp" type="xs:string" use="required"/>
+                    <xs:attribute name="nickname" type="xs:string" use="required"/>
+                    <xs:attribute name="tipoEvento" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
